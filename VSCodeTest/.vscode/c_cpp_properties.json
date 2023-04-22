@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "STM32H7",
+            "includePath": [
+                "${workspaceFolder}/**" // Es wird durch Inc den Prokect File gesucht 
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_HAL_DRIVER",
+                "STM32H743xx"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+              "-mcpu=cortex-m7",
+              "-mthumb"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }        
+    ],
+    "version": 4
+}
